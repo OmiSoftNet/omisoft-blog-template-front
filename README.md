@@ -1,4 +1,4 @@
-# OMISOFT BLOG EXAMPLE
+# OMISOFT BLOG EXAMPLE - FRONT END
 
 Here you can find a simple boilerplate for a Blog based on React.js & Next.js. We use this code in the project [SudokuPro.app](https://sudokupro.app)
 
