@@ -1,0 +1,26 @@
+const COLORS = {
+  GRAY: "#333333",
+  WHITE: "white",
+  GRAY_FOR_TEXT: "#616161",
+  GRAY_SHORT_DESCRIPTION: "#717384",
+  GRAY_LIGTHER: "#83869E",
+  BUTTON_LINEAR: "linear-gradient(131.27deg, #51ADF5 8.95%, #2196F3 85.94%)",
+  YELLOW_BUTTON_LINEAR:
+    "linear-gradient(95.66deg, #FDC065 11.47%, #F9C02E 93.62%)",
+  MAIN: "#2196F3",
+  SECONDARY: "#EBF6FF",
+  BLOG_GRID_ROWS: "#EBF6FF",
+  BLOG_GRID_ROWS_2: "#B9DCF7",
+  ELEMENTS: "#D670FA",
+  INCORRECT: "#FDD0DB",
+  STAR_YELLOW: "#FEB25B",
+  SHADOW: "rgba(60, 133, 191, 0.18)",
+  BLUE_BUTTON_LINEAR:
+    "linear-gradient(95.66deg, #65f5fd 11.47%, #2d8c91 93.62%)",
+  SHARE_MODAL_LINEAR: "linear-gradient(180deg, #EBF6FF 0%, #CFE6F9 100%)",
+  NUMBER_SELECTED: "#CDE6F9",
+  DEEP_BLUE: "#289AF4",
+  Deep_GRAY: "#717384",
+};
+
+export default COLORS;

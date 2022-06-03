@@ -1,0 +1,19 @@
+stages:
+  - deploy
+
+deploy:
+  stage: deploy
+  only:
+    - release
+  variables:
+    IP: "127.134.187.100"
+    USER: "root"
+  script:
+    - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client -y )"
+    - eval $(ssh-agent -s)
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config
+    - ssh $USER@$IP "git -C omisoft/blog-template-front pull https://$CI_DEPLOY_USER:$CI_DEPLOY_PASSWORD@gitlab.com/omisoft/blog-template-front.git"
+    - ssh $USER@$IP "npm i --legacy-peer-deps --prefix omisoft/blog-template-front && pm2 restart front"
