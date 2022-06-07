@@ -1,4 +1,4 @@
-<img src="./images/cover.png" alt="WEATHER REACT NATIVE EXAMPLE" width="800">
+<img src="./images/cover.png" alt="OMISOFT BLOG EXAMPLE - FRONT END" width="800">
 
 # OMISOFT BLOG EXAMPLE - FRONT END
 
