@@ -1,6 +1,6 @@
 <img src="./images/cover.png" alt="OMISOFT BLOG EXAMPLE - FRONT END" width="800">
 
-![node.js](https://img.shields.io/static/v1?label=node.js&message=18.2.0&color=tomato)
+![node.js](https://img.shields.io/static/v1?label=node.js&message=>=16.0.0&color=tomato)
 ![next.js](https://img.shields.io/static/v1?label=next.js&message=12.1.6&color=green)
 ![npm](https://img.shields.io/static/v1?label=npm&message=8.9.0&color=orange)
 ![typescript](https://img.shields.io/static/v1?label=typescript.js&message=4.6.3&color=blue)
