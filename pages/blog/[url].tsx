@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { Grid, ImageListItem, useMediaQuery } from "@mui/material";
+import { Grid, ImageListItem } from "@mui/material";
 import { GetStaticProps, NextPage } from "next";
 import { format } from "date-fns";
 import ReactMarkdown from "react-markdown";
@@ -84,9 +84,7 @@ const Post: NextPage<Props> = ({ postsData, setPopup, popup }) => {
                 <StyledBlockPlaceholder />
               )}
               <div className={style.reactMarkDown}>
-                <ReactMarkdown linkTarget="_blank">
-                  {postsData?.topic || ""}
-                </ReactMarkdown>
+                <ReactMarkdown>{postsData?.topic || ""}</ReactMarkdown>
               </div>
               <PostLine />
               <TopicFooter>

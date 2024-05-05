@@ -2,7 +2,6 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import { Routes } from "../../config/routes";
 import Container from "../Container";
-import SupportUkraine from "../SupportUkraine";
 import {
   Divider,
   ImageLink,
@@ -18,7 +17,6 @@ const Footer: React.FC = () => {
   const { t } = useTranslation();
   return (
     <StyledFooter>
-      <SupportUkraine />
       <Container>
         <MainFooterContent>
           <StyledLinks>

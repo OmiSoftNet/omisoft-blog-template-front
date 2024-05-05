@@ -5,7 +5,6 @@ import React, { useState } from "react";
 import Head from "next/head";
 import Header from "../src/components/Header";
 import Footer from "../src/components/Footer";
-import SupportUkraine from "../src/components/SupportUkraine";
 import Cookies from "../src/components/Cookies";
 import initLocalization from "../src/i18n";
 import createEmotionCache from "../src/utils/createEmotionCache";
@@ -46,7 +45,6 @@ const MyApp: React.FC<Props> = ({ Component, pageProps, emotionCache }) => {
           <ThemeProvider theme={theme}>
             {popup && <Cover></Cover>}
             <MainWrapper>
-              <SupportUkraine top={true} />
               <Header />
               <StyledContent>
                 <AppComponent
