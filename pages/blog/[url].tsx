@@ -9,7 +9,6 @@ import { isImagePath } from "../../src/helpers/isImagePath";
 import Container from "../../src/components/Container";
 import SimilarPost from "../../src/components/SimilarPost";
 import PopUpDevelopment from "../../src/components/PopUpDevelopment";
-import HelpProject from "../../src/components/HelpProject";
 import { Post as PostType, UrlInfo } from "../../src/types/post";
 import { PopUpT } from "../../src/types/popup";
 import { API } from "../../src/config/api";
@@ -31,10 +30,6 @@ import {
 } from "../../src/components/common/styles";
 import { DateText } from "../../src/components/Post/styles";
 import { StyledTitle } from "../../src/components/common/styles";
-import {
-  DESKTOP_MEDIA_QUERY,
-  MOBILE_MEDIA_QUERY,
-} from "../../src/constants/breakpoints";
 
 interface Props extends PopUpT {
   postsData: PostType | null;
@@ -45,8 +40,6 @@ type Post = {
 
 const Post: NextPage<Props> = ({ postsData, setPopup, popup }) => {
   const { t } = useTranslation();
-  const isMobile = useMediaQuery(MOBILE_MEDIA_QUERY);
-  const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
 
   return (
     <>
@@ -129,7 +122,6 @@ const Post: NextPage<Props> = ({ postsData, setPopup, popup }) => {
             )}
           </TopicWrapper>
         </Container>
-        <HelpProject />
       </Content>
       <PopUpDevelopment popup={popup} setPopup={setPopup} />
     </>
